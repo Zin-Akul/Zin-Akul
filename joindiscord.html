@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 94%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #000000;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 5px solid #00FFFF;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color:black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #E1E1E1 ;
+}
+</style>
+	<title>Home - Zinakul</title>
+</head>
+<body style="background-color:black;">
+	<div>
+<div class="container">
+<div class="topnav">
+<a href="home.html">HOME</a>
+<a href="joindiscord.html">JOIN US--This Page</a>
+    <a href="games.html">GAMES</a>
+</div>
+
+		<img src="Images/JD.png" alt="banner">
+    <center>
+    <button style="width: 200px; height: 100px; color:white; background-color: hotpink" onclick="window.location.href='https://discord.gg/uk7PkHjR';">
+      Join our Discord Server
+    </button>
+        <h1 style="color: lightcoral">Communicate on Discord</h1>
+        <h3 style="color: ghostwhite">@KING_ZIN#1661</h3>
+             <h3 style="color: ghostwhite">@KING_AK#3686</h3>
+    </center>
+        </div>
+    </div>
+    </body>
+</html>

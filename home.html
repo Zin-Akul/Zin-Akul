@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+#myInput {
+  background-image: url('searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 94%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #000000;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 5px solid #00FFFF;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color:black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #E1E1E1 ;
+}
+</style>
+	<title>Home - Zinakul</title>
+</head>
+<body style="background-color:black;">
+	<div>
+<div class="container">
+<div class="topnav">
+<a href="home.html">HOME--This Page</a>
+<a href="joindiscord.html">JOIN US</a>
+    <a href="games.html">GAMES</a>
+</div>
+
+		<img src="Images/ZA.png" alt="banner">
+		<article>
+			<h2 style="color: white;">About this Site</h2>
+
+					 <p style="color: white;">  In this Website you can download free games, free softwares...
+					 When someone ask you to show your games or Softwares, you may have an Empty folder to show...
+					 But not anymore!
+					  You have arrived the right destination for free games and softwares...
+					 Basically I share you games and softwares with Mediafire and WinRAR SFX. On every repack you can see a message <b>"this game is Repacked by Zinakul"
+					 </b>.
+					  Alright, now go explore this site, Have Fun ;)!</p>
+		</article>
+		<center>
+  <h1 style="color: white;">Search For Games</h1>
+</center>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Games.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="among-us.html">*_*</a></li>
+  <li><a href="GTA4.html">*_*</a></li>
+
+  <li><a href="RDR.html">*_*</a></li>
+  <li><a href="RDR2.html">*_*</a></li>
+
+  <li><a href="PES20.html">*_*</a></li>
+  <li><a href="FIFA20.html">*_*</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+        <h5> </h5>
+    <hr/>
+        <center>
+        <div class = title >Wanna Calculate??</div> 
+      <table border="0"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="C" onclick="clr()"/> </td> 
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value="÷" onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"/> </td> 
+            <td><input type="button" value="×" onclick="dis('*')"/> </td> 
+         </tr> 
+      </table> 
+        </center>
+		<footer>
+			<div class="footer"><!--fixed footer-->
+<div class="grid-container">
+<div class="grid-item">
+</div>
+<div class="grid-item">
+Email:zinakul094@gmail.com<br>
+<br>
+</div>
+<div class="grid-item">
+    Discord: https://discord.gg/uk7PkHjR
+		</footer>
+                </div>
+	</div>
+</body>
+</html>
